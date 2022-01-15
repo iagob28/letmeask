@@ -1,10 +1,17 @@
+import { useContext } from "react"
+
 import illustrationImg from "../assets/img/illustration.svg"
 import logoImg from "../assets/img/logo.svg"
 
+import { Link } from "react-router-dom"
+
 import "../styles/auth.scss"
 import { Button } from "../components/Button"
+import { AuthContext } from "../App"
+
 
 export function NewRoom() {
+  const { user } = useContext(AuthContext);
   return (
     <div id="page-auth">
       <aside>
@@ -26,7 +33,7 @@ export function NewRoom() {
             </Button>
           </form>
           <p>
-            Quer entrar em uma sala existente? <a href="#">clique aqui</a>
+            Quer entrar em uma sala existente? <Link to="/">clique aqui</Link>
           </p>
         </div>
       </main>
