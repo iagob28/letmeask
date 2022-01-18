@@ -8,9 +8,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-    > img {
-      max-height: 45px;
+
+      > img {
+        max-height: 45px;
+      }
+
+      > div {
+        display: flex;
+        gap: 16px;
+
+        button {
+          height: 40px;
+        }
+      }
     }
   }
   main {
@@ -43,8 +53,8 @@
         border: 0;
         padding: 16px;
         border-radius: 8px;
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
         background: #fefefe;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.84);
         resize: vertical;
         min-height: 130px;
       }
@@ -87,6 +97,10 @@
           }
         }
       }
+    }
+
+    .question-list {
+      margin-top: 32px;
     }
   }
 }
