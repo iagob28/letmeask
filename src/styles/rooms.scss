@@ -1,0 +1,24 @@
+.room {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #835afd;
+  border-radius: 30px;
+  margin-top: 16px;
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #835afd;
+    text-decoration: none;
+  }
+}
